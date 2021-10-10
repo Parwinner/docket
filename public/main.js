@@ -1,3 +1,4 @@
+
 const socket = io();
 
 const messages = document.querySelector('ul');
@@ -30,4 +31,3 @@ socket.on('server_msg', (message) => {
     messages.appendChild(item)
     document.querySelector("audio").play();
     divBox.scrollTo(0, divBox.scrollHeight);
-});
